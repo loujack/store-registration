@@ -1,0 +1,131 @@
+.ecom_background1 {
+	background-color: #d1f3fd;
+    /* background-image: linear-gradient( 135deg, #c2f1ff 30%, #6a7dfa 100%); */
+}
+
+.ecom_background2 {
+    position: relative;
+    color: #fff;
+    text-shadow: 0 0 0.5px rgba(255, 255, 255, 0.25);
+    text-align: center;
+    background: #3572b8 url(images/banner.svg) bottom center no-repeat;
+    padding: 5em 0 5em 0;
+    margin: 0;
+    background-size: 125% auto;
+}
+
+li {
+	text-align:left;
+	font-size: 16pt;
+}
+
+input::placeholder {
+    color: #ff4141 !important;
+}
+
+.font-red {
+	color: #e00000;
+    text-align:left;
+}
+
+.font-red-bold {
+	color: #e00000;
+    text-align:left;
+    font-weight: bold;
+}
+
+.font-orange {
+	color: #ff6600;
+    text-align:left;
+}
+
+.font-orange-bold {
+	color: #ff6600;
+    text-align:left;
+    font-weight: bold;
+}
+
+.font-blue {
+    color: #003c9d;
+    text-align:left;
+}
+
+.font-blue-bold {
+    color: #003c9d;
+    text-align:left;
+    font-weight: bold;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.data {
+    border-radius: 8px;
+    border: solid 3px #285bad;
+	background: #F7FBCD;
+}
+
+.bank-data {
+    border-radius: 8px;
+    border: solid 3px #285bad;
+	background: transparent;
+	margin: 1em 0 0 1em;
+}
+
+/* verification-picture */
+
+div.verification {
+	width: 100%;
+}
+
+div.verification .text  {
+	width: 18%;
+}
+
+div.verification .picture  {
+	width:20%;
+}
+
+div.verification .picture > span > img  {
+	padding-top: 0.3em;
+	margin-left: -1em;
+}
+
+div.verification .btn  {
+	margin-left: -5.5em;
+	margin-top: -0.3em;
+}
+
+@media screen and (max-width: 953px) {
+	/* verification-picture */
+
+	div.verification {
+		width: 100%;
+	}
+
+	div.verification .text  {
+		width: 50%;
+	}
+
+	div.verification .input  {
+		width: 50%;
+	}
+
+	div.verification .picture  {
+		width: 50%;
+	}
+
+	div.verification .picture > span > img  {
+		width: 120px;
+		margin-left: 0.5em;
+	}
+
+	div.verification .btn  {
+		width: 40%;
+		margin-left: 2em;
+		margin-top: -0.3em;
+	}
+}
