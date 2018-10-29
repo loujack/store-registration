@@ -1043,7 +1043,11 @@
 	color: #3c78d8;
 }
 
-#spic
+.row-margin-bottom {
+	margin-bottom: 20px;
+}
+
+/*#spic
 {
 	line-height:10px;
 	padding:5px;
@@ -1056,7 +1060,7 @@
 }
 #spic2 img {
 	max-height: 300px
-}
+}*/
 
 .ecom_keyworld {
 	font-weight: bold;
