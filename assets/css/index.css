@@ -1064,16 +1064,91 @@
 }
 
 @media screen and (max-width: 1680px) {
-	#qrcode {
+	.align-st-row {
+		width: 700px; margin: 0 auto;
+	}
+
+	.align-st h3{
+		align-self:center;
+		display: block;
 		float: right;
-		position: relative;
-		top:-150px
+		width: 60%;
+		font-size: 1.25em;
 	}
 }
-@media screen and (max-width: 1280px) and (max-width: 980px) and (max-width: 736px) {
-	#qrcode {
+
+@media screen and (max-width: 736px) {
+	.align-st-row {
+		width: 300px; margin: 0 auto;
+	}
+
+	.align-st h3{
+		align-self:center;
+		display: block;
 		float: right;
-		position: relative;
-		top: 0px
+		width: 60%;
+		font-size: 0.8em;
+	}
+}
+
+.align-st li{
+	display: flex;
+}
+
+.align-st .img-link{
+	width: 40%;
+	display:block;
+	margin-right: 20px;
+}
+
+.align-st img{
+	max-width: 80%;
+}
+
+
+#qrcode-row ul li {
+	float: left;
+	list-style-type: none;
+	margin: 10px;
+}
+
+@media screen and (max-width: 736px) {
+	#qrcode-row ul li {
+		float:left;
+		list-style-type: none;
+		margin: 10px 0px;
+	}
+}
+
+#qrcode-row ul {
+	display: table;
+    margin: 0 auto;
+}
+
+.qrcode {
+	background: linear-gradient(to bottom, #fefefe 0%, #dddddd 100%);
+    border: solid 1px #999;
+    box-shadow: 0 0 5px #999;
+    margin-top: 29px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+	.qrcode img {
+		vertical-align: middle;
+	}
+
+.qrcode-link {
+	border: solid 1px #999;
+}
+
+.app-link {
+	margin: 0 15px;
+}
+
+@media screen and (max-width: 736px) {
+	.app-link {
+		margin: 0 15px;
+		max-width: 130px;
 	}
 }
