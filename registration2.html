@@ -10,6 +10,7 @@
 	<title>Miniport by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="Access-Control-Allow-Origin" content="*" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/my.css" />
 </head>
@@ -20,68 +21,105 @@
 	<nav id="nav">
 		<ul class="container">
 			<li><a href="index.html">如何申請</a></li>
-			<li><a href="registration1.html" class="active">登錄</a></li>
-			<li><a href="verification1.html">開戶驗證</a></li>
+			<li><a href="registration1.html" class="active">取得申請編號及店家編號</a></li>
+			<li><a href="verification1.html">開戶編號核對</a></li>
 			<li><a href="authorization1.html">授權代碼補發</a></li>
+			<li><a href="download.html">立即下載</a></li>
 		</ul>
 	</nav>
 
 	<!-- Home -->
 	<article id="second" class="wrapper ecom_background1">
+		<h1 class="font-blue-bold" style="text-align: center;">確認輸入的資料</h1>
 		<div class="container">
 			<div class="row">
-				<div class="col-8-xlarge col-10-small center">
-					<p class="font-orange-bold">您已經登錄成功，詳細資訊參見如下：</p>
+				<div class="col-8 col-10-medium col-10-small center">
+					<p class="font-blue-bold" style="text-align:right" id="dateTime"></p>
+					<p class="font-orange-bold">請您再次確認輸入的店家登記名稱、統一編號、連絡電話及營業地址。</p>
 				</div>
-				<div class="col-8-xlarge col-10-small center data">
-					<form method="post" action="#">
+				<div class="col-8 col-10-medium col-10-small center data">
+					<form method="post" action="registration3.html">
 						<div class="row">
-							<div class="col-5">
-								<p class="font-blue-bold">流水號</p>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-4 col-6-small">
+										<p class="font-blue-bold">申請流水號</p>
+									</div>
+									<div class="col-8 col-6-small">
+										<p id="serialId" class="font-blue">00001872</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-7">
-								<p class="font-blue">00001872</p>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-4 col-6-small">
+										<p class="font-blue-bold">店家登記名稱</p>
+									</div>
+									<div class="col-8 col-6-small">
+										<p id="serialId" class="font-blue">好生活家電廣場</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-5">
-								<p class="font-blue-bold">申請編號</p>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-4 col-6-small">
+										<p class="font-blue-bold">統一編號</p>
+									</div>
+									<div class="col-8 col-6-small">
+										<p id="serialId" class="font-blue">22***571</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-7">
-								<p class="font-blue">EB00001458</p>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-4 col-6-small">
+										<p class="font-blue-bold">連絡電話</p>
+									</div>
+									<div class="col-8 col-6-small">
+										<p id="serialId" class="font-blue">09******43</p>
+									</div>
+								</div>
 							</div>
-							<div class="col-5">
-								<p class="font-blue-bold">店家編號</p>
-							</div>
-							<div class="col-7">
-								<p class="font-blue">A00100</p>
-							</div>
-							<div class="col-5">
-								<p class="font-blue-bold">店家登記名稱</p>
-							</div>
-							<div class="col-7">
-								<p class="font-blue">好生活家電廣場</p>
-							</div>
-							<div class="col-5">
-								<p class="font-blue-bold">登錄日期時間</p>
-							</div>
-							<div class="col-7">
-								<p id="dateTime" class="font-blue"></p>
+							<div class="col-12">
+								<div class="row">
+									<div class="col-4 col-6-small">
+										<p class="font-blue-bold">營業地址</p>
+									</div>
+									<div class="col-8 col-6-small">
+										<p id="serialId" class="font-blue">台北市大安區敦化南路二段67號</p>
+									</div>
+								</div>
 							</div>
 						</div>
 					</form>
 				</div>
 				<div class="col-8-xlarge col-10-small center">
-						<ol>
-								　<li class="font-blue">請持申請編號及店家編號，到指定銀行開戶。</li>
-								　<li class="font-blue">開戶完成後，請回到網站點選「開戶驗證」完成申請程序。</li>
-								</ol>
-					<!-- <p style="text-align: left;color:#002155;">1. 請持申請編號及店家編號，到指定銀行開戶。</p>
-					<p style="text-align: left;color:#002155;">2. 開戶完成後，請回到網站點選「開戶驗證」完成申請程序。</p> -->
+					<form method="post" action="#">
+						<div class="row">
+							<div class="col-6 col-12-small row">
+								<div class="col-6-xlarge col-5-small">
+									<p class="font-blue-bold">圖形驗證碼</p>
+								</div>
+								<div class="col-6-xlarge col-7-small">
+									<input type="text" name="" id="" placeholder="請輸入">
+								</div>
+							</div>
+							<div class="col-6 col-12-small row">
+								<div class="col-5-xlarge col-5-small">
+									<span class="image fit"><img src="images/Captcha.png" alt="" /></span>
+								</div>
+								<div class="col-7-xlarge col-7-small">
+									<a href="" class="button scrolly" style="font-size: 1em">重新產生</a>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
-				<div class="col-8-xlarge col-10-small center">
-					<a href="registration3.html" class="col-3 button scrolly">台X銀行</a>
-					<a href="registration3.html" class="col-3 button scrolly">富X銀行</a>
-					<a href="registration3.html" class="col-3 button scrolly">第X銀行</a>
-					<a href="registration3.html" class="col-3 button scrolly">彰X銀行</a>
+				<div class="col-12" style="margin-top: 1em;">
+					<!-- <div class="row"> -->
+					<a href="registration1.html" class="col-5 button scrolly">返回修改</a>
+					<a href="registration3.html" class="col-5 button scrolly">資料確認</a>
+					<!-- </div> -->
 				</div>
 			</div>
 		</div>
@@ -105,12 +143,8 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	<script>
-		var date = new Date();
-		var datestring = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate() + " " +
-			date.getHours() + ":" + date.getMinutes();
-    	$('#dateTime').append(datestring);
-	</script>
+	<script src="assets/js/my.js"></script>
+
 </body>
 
 </html>

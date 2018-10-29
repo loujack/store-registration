@@ -1,5 +1,6 @@
 .ecom_background1 {
 	background-color: #d1f3fd;
+	padding-top: 3em;
     /* background-image: linear-gradient( 135deg, #c2f1ff 30%, #6a7dfa 100%); */
 }
 
@@ -21,6 +22,7 @@ li {
 
 input::placeholder {
     color: #ff4141 !important;
+	font-size: 16pt;
 }
 
 .font-red {
@@ -71,7 +73,7 @@ input::placeholder {
 .bank-data {
     border-radius: 8px;
     border: solid 3px #285bad;
-	background: transparent;
+	background: #F7FBCD;
 	margin: 1em 0 0 1em;
 }
 

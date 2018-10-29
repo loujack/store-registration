@@ -20,27 +20,29 @@
 	<nav id="nav">
 		<ul class="container">
 			<li><a href="index.html">如何申請</a></li>
-			<li><a href="registration1.html">登錄</a></li>
-			<li><a href="verification1.html" class="active">開戶驗證</a></li>
+			<li><a href="registration1.html">取得申請編號及店家編號</a></li>
+			<li><a href="verification1.html" class="active">開戶編號核對</a></li>
 			<li><a href="authorization1.html">授權代碼補發</a></li>
+			<li><a href="download.html">立即下載</a></li>
 		</ul>
 	</nav>
 
 	<!-- Home -->
 	<article id="second" class="wrapper ecom_background1">
+		<h1 class="font-blue-bold" style="text-align: center;">開戶編號核對</h1>
 		<div class="container">
 			<div class="row">
 				<div class="col-8-xlarge col-10-small center">
 					<p class="font-blue-bold" style="text-align:right" id="dateTime"></p>
-					<p class="font-orange-bold">請輸入申請編號、店家編號及銀行開戶編號，取得店家登錄資料，以利與開戶銀行提供之開戶資料核對：</p>
+					<p class="font-orange-bold">請輸入申請編號、店家編號及開戶編號，取得店家登錄資料，以利與開戶銀行提供之開戶資料核對：</p>
 				</div>
 				<div class="col-8-xlarge col-10-small center">
-					<form method="post" action="verification2.html">
+					<form method="post" action="verification3.html">
 						<div class="row">
 							<div class="col-12">
 								<div class="row">
 									<div class="col-3-xlarge col-5-small">
-										<p class="font-blue-bold" style="text-align:left">申請編號</p>
+										<p class="font-blue-bold" style="text-align:left;">申請編號</p>
 									</div>
 									<div class="col-9-xlarge col-7-small">
 										<input type="text" name="" id="" placeholder="請輸入">
@@ -50,7 +52,7 @@
 							<div class="col-12">
 								<div class="row">
 									<div class="col-3-xlarge col-5-small">
-										<p class="font-blue-bold" style="text-align:left">開戶編號</p>
+										<p class="font-blue-bold" style="text-align:left;">店家編號</p>
 									</div>
 									<div class="col-9-xlarge col-7-small">
 										<input type="text" name="" id="" placeholder="請輸入">
@@ -60,16 +62,37 @@
 							<div class="col-12">
 								<div class="row">
 									<div class="col-3-xlarge col-5-small">
-										<p class="font-blue-bold" style="text-align:left">店家編號</p>
+										<p class="font-blue-bold" style="text-align:left;">開戶編號</p>
 									</div>
 									<div class="col-9-xlarge col-7-small">
 										<input type="text" name="" id="" placeholder="請輸入">
 									</div>
 								</div>
 							</div>
+                            <div class="col-6 col-12-small">
+                                <div class="row">
+                                    <div class="col-6 col-5-small">
+                                        <p class="font-blue-bold">圖形驗證碼</p>
+                                    </div>
+                                    <div class="col-6 col-7-small">
+                                        <input type="text" name="" id="" placeholder="請輸入">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-6-small off-5-small">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <span class="image fit"><img src="images/Captcha.png" alt="" /></span>
+                                    </div>
+                                    <div class="col-6">
+                                        <a href="" class="button scrolly" style="font-size: 1em">重新產生</a>
+                                    </div>
+                                </div>
+                            </div>
 							<div class="col-12">
-								<input type="submit" value="取得登錄資料" />
+								<input type="submit" value="核對"/>
 							</div>
+							<p class="font-red-bold">本公司將善盡個資保護之管理責任，填寫的資料僅供店家申請使用。</p>
 						</div>
 					</form>
 				</div>
