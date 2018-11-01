@@ -30,14 +30,14 @@
 
 	<!-- Home -->
 	<article id="second" class="wrapper ecom_background1">
-		<h1 class="font-blue-bold" style="text-align: center;">取得申請編號及店家編號</h1>
+		<h2 class="font-blue-bold ecom_subTitle">取得申請編號及店家編號</h2>
 		<div class="container">
 			<div class="row">
-				<div class="col-8 col-10-medium col-10-small center">
-					<p class="font-blue-bold" style="text-align:right" id="dateTime"></p>
-					<p class="font-orange-bold">輸入店家登記名稱、統一編號及營業地址，取得店家編號及申請編號。</p>
+				<div class="col-10 col-10-medium col-10-small center">
+					<p class="font-blue-bold displayDateTime" id="dateTime"></p>
+					<p class="font-orange-bold">輸入店家登記名稱、統一編號、連絡電話及營業地址，取得店家編號及申請編號。</p>
 				</div>
-				<div class="col-8 col-10-medium col-10-small center">
+				<div class="col-10 col-10-medium col-10-small center">
 					<form method="post" action="registration2.html">
 						<div class="row">
 							<div class="col-12">
@@ -83,17 +83,17 @@
 										<div class="row">
 											<div class="col-4 col-12-small">
 												<select name="county" id="county">
-													<option>選擇縣市</option>
+													<option>=選擇縣市=</option>
 												</select>
 											</div>
 											<div class="col-4 col-12-small">
 												<select name="township" id="township">
-													<option>選擇鄉鎮市區</option>
+													<option>=選擇鄉鎮市區=</option>
 												</select>
 											</div>
 											<div class="col-4 col-12-small">
 												<select name="street" id="street">
-													<option>選擇街道</option>
+													<option>=選擇街道=</option>
 												</select>
 											</div>
 											<div class="col-12 col-12-small">
@@ -103,12 +103,15 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-12">
+							<div class="col-12" style="margin: 20pt 0;">
 								<input type="submit" value="下一步" />
 							</div>
 						</div>
 					</form>
-					<p class="font-red-bold">本公司將善盡個資保護之管理責任，填寫的資料僅供店家申請使用。</p>
+					<ul>
+						<li class="font-red-bold">本公司將善盡個資保護之管理責任，填寫的資料僅供店家申請使用。</li>
+						<li class="font-red-bold">您的資料在傳輸過程及儲存均已進行全程加密保護。</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -119,7 +122,7 @@
 			<footer>
 				<ul id="copyright">
 					<li>&copy; Untitled. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>Design: <a href="http://html5up.net" id="design">HTML5 UP</a></li>
 				</ul>
 			</footer>
 		</div>

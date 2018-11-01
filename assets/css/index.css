@@ -9,7 +9,7 @@
 			border-radius: 0%;
 			width: 15em;
 			height: 20em;
-			margin: 0;
+			margin: 0 auto;
 		}
 
 			#top .image img {
@@ -95,11 +95,11 @@
 				}
 
 		.row > .col-4 {
-			width: 40%;
+			width: 50%;
 		}
 
 		.row > .off-4 {
-			margin-left: 40%;
+			margin-left: 50%;
 		}
 
 				.row > .col-5-xlarge {
@@ -135,11 +135,11 @@
 				}
 
 		.row > .col-8 {
-			width: 60%;
+			width: 50%;
 		}
 
 		.row > .off-8 {
-			margin-left: 60%;
+			margin-left: 50%;
 		}
 
 				.row > .col-9-xlarge {
@@ -231,7 +231,7 @@
 				}
 
 					.row > * {
-						padding: 25px 0 0 25px;
+						padding: 25px 0 0 0;
 					}
 
 					.row.gtr-uniform {
@@ -1034,10 +1034,23 @@
 	.wrapper {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		padding: 6em 0 6em 0;
+		padding: 4em 0;
 		text-align: center;
 	}
 
+/* a, p, ul, ol, dl, table */
+
+@media screen and (max-width: 736px) {
+	a, p, ul, ol, dl, table {
+	    margin: 5pt;
+	    color: #000000;
+	    font-size: 16pt;
+	}
+}
+
+.ecom_title {
+	margin-left: 1.5em;
+}
 
 .ecom_h2_color {
 	color: #3c78d8;
@@ -1047,66 +1060,40 @@
 	margin-bottom: 20px;
 }
 
-/*#spic
-{
-	line-height:10px;
-	padding:5px;
-	/*float:left;*/
- text-align : center
-}
-
 #spic img {
-	max-height: 400px
+	max-height: 400px;
 }
 #spic2 img {
-	max-height: 300px
-}*/
+	max-height: 300px;
+}
 
-.ecom_keyworld {
+.ecom_keyword {
 	font-weight: bold;
-	color: red;
+	color: #3c78d8;
 }
 
 @media screen and (max-width: 1680px) {
-	.align-st-row {
-		width: 700px; margin: 0 auto;
+	.align-st img{
+		width: 300px;
 	}
+}
 
-	.align-st h3{
-		align-self:center;
-		display: block;
-		float: right;
-		width: 60%;
-		font-size: 1.25em;
+@media screen and (max-width: 1280px) {
+	.align-st img{
+		width: 220px;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.align-st img{
+		width: 150px;
 	}
 }
 
 @media screen and (max-width: 736px) {
-	.align-st-row {
-		width: 300px; margin: 0 auto;
+	.align-st img{
+		width: 100px;
 	}
-
-	.align-st h3{
-		align-self:center;
-		display: block;
-		float: right;
-		width: 60%;
-		font-size: 0.8em;
-	}
-}
-
-.align-st li{
-	display: flex;
-}
-
-.align-st .img-link{
-	width: 40%;
-	display:block;
-	margin-right: 20px;
-}
-
-.align-st img{
-	max-width: 80%;
 }
 
 

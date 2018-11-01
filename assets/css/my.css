@@ -1,6 +1,6 @@
 .ecom_background1 {
 	background-color: #d1f3fd;
-	padding-top: 3em;
+	padding-top: 2em;
     /* background-image: linear-gradient( 135deg, #c2f1ff 30%, #6a7dfa 100%); */
 }
 
@@ -17,12 +17,12 @@
 
 li {
 	text-align:left;
-	font-size: 16pt;
+	font-size: 20pt;
 }
 
 input::placeholder {
     color: #ff4141 !important;
-	font-size: 16pt;
+	font-size: inherit;
 }
 
 .font-red {
@@ -130,4 +130,24 @@ div.verification .btn  {
 		margin-left: 2em;
 		margin-top: -0.3em;
 	}
+}
+
+#design {
+	font-size: inherit;
+}
+
+.displayDateTime {
+	text-align:right;
+	font-size:20pt;
+	margin-top: 0px;
+}
+
+.ecom_keyword {
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.ecom_subTitle {
+	text-align: center;
+	margin-bottom: 10px
 }
