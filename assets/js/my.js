@@ -1563,8 +1563,8 @@ $(document).ready(function () {
     var county;
     var township;
     var date = new Date();
-    var datestring = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + date.getDate() + " " +
-        date.getHours() + ":" + date.getMinutes();
+    var datestring = date.getFullYear() + "/" + (date.getMonth() + 1) + "/" + (date.getDate() < 10 ? "0" + date.getDate() : date.getDate()) + " " +
+        (date.getHours() < 10 ? "0" + date.getHours() : date.getHours()) + ":" + (date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes());
     for (var i = 0; i < json.length; i++) {
         $('#county').append('<option value="' + json[i]['city'] + '">' + json[i]['city'] + '</option>');
     }
