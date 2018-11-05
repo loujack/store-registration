@@ -151,3 +151,19 @@ div.verification .btn  {
 	text-align: center;
 	margin-bottom: 10px
 }
+
+#copyright li {
+	font-size:14pt;
+}
+
+.aButton1 {
+	padding: 0.25em 1.35em;
+}
+
+.aButton2 {
+    padding: 0.5em 0.9em
+}
+
+.aButton3 {
+	padding: 0.5em 1.35em;
+}
