@@ -23,7 +23,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -346,6 +347,18 @@ input, select, textarea {
 
 				.container2.medium {
 					width: 100%;
+				}
+
+		}
+		
+		@media screen and (min-width: 1440px) {
+
+			.container2 {
+				width: 1440px;
+			}
+
+				.container2.medium {
+					width: 1200px;
 				}
 
 		}
@@ -2352,7 +2365,6 @@ input, select, textarea {
 				}
 
 /* Nav */
-
 	#nav {
 		background-color: #282828;
 		text-align: center;
@@ -2417,6 +2429,55 @@ input, select, textarea {
 			border-right: solid 0.75em transparent;
 			border-top: solid 0.6em #282828;
 		}
+		
+		#nav li.goTop {
+			display: none;
+		}
+
+	h1.logo {
+		display: inline-flex;
+	    margin-bottom: 0px;
+	}
+
+	h1.logo a {
+	    color: #d8d8d8;
+	    text-decoration: none;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    font-size: 24px;
+	    line-height: 22px;
+	    float: left;
+	    letter-spacing: 0.2em;
+	}
+
+	h1.logo a:hover,
+	h1.logo a:focus {
+	    color: #fff !important;
+	}
+
+	a.to_nav {
+		display: inline-block;
+	    /*float: right;*/
+	    color: #000;
+	    background: #4e4e4e;
+	    text-decoration: none;
+	    padding: 5px 10px;
+	    font-size: inherit;
+	    font-weight: bold;
+	    line-height: 22px;
+	    height: auto;
+	    text-transform: uppercase;
+	    letter-spacing: 0.1em;
+	    -webkit-border-radius: 2px;
+	    -moz-border-radius: 2px;
+	    border-radius: 2px;
+	}
+	 
+	a.to_nav:hover,
+	a.to_nav:focus {
+	    color: #1c1c1c;
+	    background: #ccc;
+	}
 
 /* Articles */
 
@@ -2760,7 +2821,7 @@ input, select, textarea {
 		/* Copyright */
 
 			#copyright {
-				font-size: 1em;
+				font-size: 0.9em;
 				margin: 0;
 			}
 
@@ -2776,4 +2837,39 @@ input, select, textarea {
 						margin-top: 0;
 					}
 
+	}
+
+
+	@media (max-width: 767px) {
+		#nav {
+			position: relative;
+			text-align: left;
+		}
+
+		#nav li.goTop {
+			display: inline-block;
+		}
+
+		#nav a {
+			font-size: 16pt;
+		}
+
+		body {
+			padding-top: 0px;
+		}
+	}
+
+	@media (max-width: 480px) {
+	}
+
+	@media (min-width: 768px) and (max-width: 979px) {
+	}
+
+	@media (min-width: 980px) {
+		a.to_nav {
+			display: none;
+		}
+	}
+
+	@media (min-width: 1200px) {
 	}
